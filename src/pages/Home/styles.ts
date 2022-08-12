@@ -5,8 +5,7 @@ export const Home = styled.section`
     width: 100%;
   }
   aside {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
   }
 `

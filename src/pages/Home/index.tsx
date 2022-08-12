@@ -1,5 +1,6 @@
 import React from "react";
-import carrousel from "assets/img/carrousel.png";
+import carrousel from "assets/img/Group1.png";
+import imagem from "assets/img/image5.png";
 import * as S from "./styles";
 import { CardComponent } from "components";
 import dados from "services/dados";
@@ -11,7 +12,7 @@ const Home = () => {
         <img src={carrousel} alt="Imagens principais" />
       </picture>
       <aside>
-        {dados && dados.map((item) => <CardComponent dados={item} />)}
+        <img src={imagem} alt="Imagens principais" />
       </aside>
     </S.Home>
   );
