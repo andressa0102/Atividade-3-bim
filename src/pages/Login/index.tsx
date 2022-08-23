@@ -22,7 +22,7 @@ const Login = () => {
           <input type="password" name="senha" id="senha" placeholder="Senha" />
         </div>
         <p>
-          Não possui conta? <Link to="/cadastrar">Cadastre-se</Link>
+          Já possui conta? Faça seu login <Link to="/cadastrar"></Link>
           <ButtonComponent>Entrar</ButtonComponent>
         </p>
       </form>
