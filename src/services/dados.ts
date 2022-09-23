@@ -1,3 +1,4 @@
+import { Script } from "vm"
 const dados = [
   {
     id: 1,
