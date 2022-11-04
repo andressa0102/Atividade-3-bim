@@ -1,2 +1,2 @@
-export { default as AdmMessagePage } from "./Message"
-export { default as AdmMessageStorePage } from "./Message/store"
+export { default as AdmAutomovelPages } from "./Automovel"
+export { default as AdmAutomovelStorePages } from "./Automovel/store"

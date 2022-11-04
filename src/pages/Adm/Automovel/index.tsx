@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { ButtonComponent } from "components";
 import * as S from "./styles";
 import { apiAutomovel } from "services/data";
-import { IAutomovelData } from "interfaces/message.interface";
+import { IAutomovelData } from "interfaces/automovel.interface";
 import { LoadingComponent } from "components";
 import { FcAddDatabase } from "react-icons/fc";
 import { BsPencilSquare, BsTrash2 } from "react-icons/bs";
@@ -61,7 +61,7 @@ const AdmAutomovel = () => {
               <ButtonComponent
                 bgColor="add"
                 type="button"
-                onClick={() => navigate("/adm/message/0")}
+                onClick={() => navigate("/adm/automovel/0")}
               >
                 <FcAddDatabase />
               </ButtonComponent>
@@ -80,14 +80,15 @@ const AdmAutomovel = () => {
                 {messages &&
                   messages.map((item) => (
                     <tr key={item.id}>
-                      <td>{item.user?.name}</td>
-                      <td>{item.title}</td>
-                      <td>{item.message}</td>
+                      <td>{item.nome}</td>
+                      <td>{item.ano}</td>
+                      <td>{item.valor}</td>
+                      <td>{item.automovel}</td>
                       <td>
                         <ButtonComponent
                           type="button"
                           bgColor="edit"
-                          onClick={() => navigate(`/adm/message/${item.id}`)}
+                          onClick={() => navigate(`/adm/automovel/${item.id}`)}
                         >
                           <BsPencilSquare />
                         </ButtonComponent>
