@@ -16,8 +16,8 @@ const Rotas = () => {
         <Route path="/cadastrar" element={<CadastrarPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/adm" element={<ProtectedRoute />}>
-          <Route path="message" element={<AdmAutomovelPages />} />
-          <Route path="message/:id" element={<AdmAutomovelStorePages />} />
+          <Route path="automovel" element={<AdmAutomovelPages />} />
+          <Route path="automovel/:id" element={<AdmAutomovelStorePages />} />
         </Route>
       </Route>
     </Routes>

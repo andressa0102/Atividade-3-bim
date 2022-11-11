@@ -15,6 +15,8 @@ const AutomovelStore = () => {
   const [formData, setFormData] = useState<IAutomovelForm>({
     nome: '',
     automovel: '',
+    valor: '',
+    ano: ''
   })
   const { id } = useParams<{ id: string }>();
 
@@ -76,21 +78,21 @@ const AutomovelStore = () => {
                 <label htmlFor="nome">Nome: </label>
                 <input type="text" id="nome" placeholder="Escreva o nome do automóvel" required
                   onChange={(e) => handleChange({ nome: e.target.value })}
-                  value={formData?.automovel}
+                  value={formData?.nome}
                 />
               </div>
               <div>
                 <label htmlFor="ano">Ano: </label>
                 <textarea id="ano" placeholder="Escreva o ano" required
-                  onChange={(e) => handleChange({ automovel: e.target.value })}
-                  value={formData?.automovel}
+                  onChange={(e) => handleChange({ ano: e.target.value })}
+                  value={formData?.ano}
                 />
               </div>
               <div>
                 <label htmlFor="valor">Valor: </label>
                 <textarea id="valor" placeholder="Escreva o valor" required
-                  onChange={(e) => handleChange({ automovel: e.target.value })}
-                  value={formData?.automovel}
+                  onChange={(e) => handleChange({ valor: e.target.value })}
+                  value={formData?.valor}
                 />
               </div>
               <ButtonComponent bgColor="add" type="submit">

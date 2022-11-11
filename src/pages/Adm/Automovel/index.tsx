@@ -73,6 +73,7 @@ const AdmAutomovel = () => {
                   <th>Título</th>
                   <th>Mensagem</th>
                   <th>Editar</th>
+                  <th>Editar</th>
                   <th>Remover</th>
                 </tr>
               </thead>
