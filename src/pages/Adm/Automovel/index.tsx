@@ -70,9 +70,8 @@ const AdmAutomovel = () => {
               <thead>
                 <tr>
                   <th>Nome</th>
-                  <th>Título</th>
-                  <th>Mensagem</th>
-                  <th>Editar</th>
+                  <th>Ano</th>
+                  <th>Valor</th>
                   <th>Editar</th>
                   <th>Remover</th>
                 </tr>
