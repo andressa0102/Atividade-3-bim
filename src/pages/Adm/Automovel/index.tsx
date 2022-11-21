@@ -83,7 +83,6 @@ const AdmAutomovel = () => {
                       <td>{item.nome}</td>
                       <td>{item.ano}</td>
                       <td>{item.valor}</td>
-                      <td>{item.automovel}</td>
                       <td>
                         <ButtonComponent
                           type="button"
